@@ -1,0 +1,95 @@
+.header
+  padding: 0 20px
+
+.header-logo
+  width: 32px
+  height: 32px
+  margin-right: 10px
+
+.header-link
+  text-decoration: none
+  color: white
+  font-size: initial
+  font-weight: 300
+
+  &:hover
+    text-decoration: underline
+
+.page-title
+  font-size: 22px
+
+.page-sub-title
+  font-size: 18px
+  color: rgb(152, 153, 152)
+
+.card-title
+  font-size: 18px
+  padding: 16px
+  border-bottom: 1px solid #ddd
+
+.scroll-x
+  overflow-x: auto
+
+.tag
+  background-color: #555
+  color: #eee
+  padding: 5px 8px
+  margin: 3px
+  border-radius: 3px
+  font-size: 14px
+
+table.left-headers
+  border-spacing: 5px
+  padding-left: 20px
+
+  th
+    text-align: right
+
+  tr, td
+    vertical-align: top
+    padding-left: 10px
+
+/* Framework Overrides */
+
+body, md-content
+  background-color: #f5f5f5 !important
+  color: rgb(26, 26, 26)
+
+table
+  border-spacing: 12px
+
+  th
+    text-align: left
+
+// md-card-content
+//   overflow: overlay
+
+md-card
+  background-color: #fff
+  margin: 16px
+  overflow-x: auto
+
+md-sidenav, 
+md-sidenav.md-locked-open, 
+md-sidenav.md-closed.md-locked-open-add-active
+  min-width: 240px !important
+  max-width: 240px !important
+  background-color: rgba(26, 26, 26, 0.73)
+  color: rgba(255, 255, 255, 0.85)
+
+md-list
+  padding: 0 !important
+
+md-item
+  padding: 15px
+  cursor: pointer
+  width: 100%
+  min-height: 48px;
+
+  &.selected
+    background-color: #4179BE
+    color: #fff
+    font-weight: bolder
+
+md-item + md-item
+  border-top: 1px solid rgba(0, 0, 0, 0.15)

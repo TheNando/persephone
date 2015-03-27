@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Encore</title>
+
+    <base href="/">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/png" href="images/logo_18x18.png">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/app.css">
+  </head>
+
+  <body ng-app="persephone" layout="column" ng-controller="NavController as nav">
+
+    <!-- Header -->
+    <md-toolbar ng-include="'templates/header.html'"
+        class="header"
+        layout="row" layout-align="start center">
+    </md-toolbar>
+
+    <div layout="row">
+
+      <!-- Navigation bar -->
+      <md-sidenav ng-include="'templates/nav.html'"
+          class="md-whiteframe-z2"
+          md-component-id="nav" md-is-locked-open="$mdMedia('gt-sm')">
+      </md-sidenav>
+
+      <!-- Main content -->
+      <md-content ng-include="'templates/content.html'">        
+      </md-content>
+
+    </div>
+
+    <script src="scripts/vendor.js"> </script>
+    <script src="scripts/app.js"> </script>
+    <script src="scripts/navController.js"> </script>
+
+  </body>
+</html>
