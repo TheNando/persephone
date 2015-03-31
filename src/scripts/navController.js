@@ -27,6 +27,11 @@
     ];
 
     self.selected = 'Support Service';
+    self.toggleMenu = toggleMenu;
+
+    function toggleMenu() {
+      $mdSidenav('nav').toggle();
+    }
 
     // self.init = function () {
     //   $mdSidenav('nav').toggle();

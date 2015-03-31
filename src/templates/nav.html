@@ -1,5 +1,9 @@
 <md-list layout="column" layout-align="start start">
-  <md-item ng-class="{'selected' : link === nav.selected }" ng-repeat="link in nav.links">
+  <md-item
+        ng-class="{'selected' : link === nav.selected }"
+        ng-mouseover="prevLink = link; nav.selected = link"
+        ng-mouseout="nav.selected = prevLink"
+        ng-repeat="link in nav.links">
       <span>
         {{link}}        
       </span>
